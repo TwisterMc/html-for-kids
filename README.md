@@ -14,7 +14,7 @@ Work with an adult to get an HTML editor setup. I recommend [Visual Studio Code]
 
 It's also a good idea to install the [HTML Preview extension](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode) so that you can have your code on one side of the screen and see a live preview on the other. That way you can see what you're creating in real time.
 
-Next, create a folder on your computer called `my-website` and then open the `my-website` directory in Visual Studio Code. Not much is going on yet, but now we should be ready to code!
+Next, create a folder on your computer called `my-website` and then open the `my-website` folder in Visual Studio Code. Not much is going on yet, but now we should be ready to code!
 
 ## Level 1 - Intro
 
@@ -158,9 +158,41 @@ An ordered list looks like this:
 
 When you view your file, you should see your colors in a list with a number at the beginning of each item.
 
-## Level 6 - Images ... coming soon
+## Level 6 - Images
 
-- Image Tag
+Ready to add images? Image code looks like this:
+
+`<img src="star.png" alt="star">`
+
+Did you notice that there is no ending (aka closing) tag to the image tag? That's because you can't put anything in an image tag. 
+
+Images do have two required attributes though. We introduced attributes a bit with links, but never really explained them. Attributes provide additional information for HTML tags. These attributes are the directions the browser needs to make things work.
+
+The first attribute image tags need is the `src` attribute. This stands for source and it tells the browser what image to load.
+
+### Local Images
+
+Images can be saved locally in your `my-website` folder and then you just tell your code where the image is.
+
+[Open this link](star.png) in your web browser and save the star image into your `my-website` folder. Now you can add the following code to your file.
+
+`<img src="star.png">`
+
+The next required attribute is the `alt` tag. This stands for alternative, and its text that describes what the image is. It's used by browsers to tell people who can't see very well what the image is.
+
+Before the closing `>` in your image tag, add ` alt="star"`.
+
+Your code should now look like this: `<img src="star.png" alt="star">` and if you view your code, you should see a star.
+
+### External Images
+
+Images can also be external. This means that you don't save them into your `my-website` folder, instead you tell the browser where to find the image someplace else on the internet.
+
+The only difference in the image tag is you need to put the full URL in the `src` attribute.
+
+Create a new image tag and set this image in the `src` attribute: `https://www.twistermc.com/apple-touch-icon.png`. Don't forget the `alt` attribute. Maybe something like `Blue Tornado`.
+
+Now when you view your code, you should see a blue tornado too.
 
 ## Level 7 - Tables ... coming soon
 
